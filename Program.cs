@@ -33,15 +33,62 @@
 
 //Console.WriteLine($"");
 
-using ArrayExamples.Codes;
+//using ArrayExamples.Codes;
 
 
-WordCount t = new();
-int c = t.Count();
+//WordCount t = new();
+//int c = t.Count();
 
-Console.WriteLine($"Antal af ordet 'type' {c}: ");
+//Console.WriteLine($"Antal af ordet 'type' {c}: ");
 
-MutiDimensionalArray ma = new();
-string[] result = ma.ArrayTest();
-foreach (string text in result)
-    Console.WriteLine(text);
+//MutiDimensionalArray ma = new();
+//string[] result = ma.ArrayTest();
+//foreach (string text in result)
+//    Console.WriteLine(text);
+
+
+
+//íf (Dictionary.Exists("C:\\"))
+
+
+// Model class ex
+
+
+//Console.WriteLine("Indsæt Fornavn: ");
+//string? FirstName = Console.ReadLine();
+//Console.WriteLine("Indsæt EfterNavn: ");
+//string? LastName = Console.ReadLine();
+//Console.WriteLine("Indsæt Telefone: ");
+//string? teleFone = Console.ReadLine();
+
+
+
+PersonModel personM = new PersonModel()
+{
+    FirstName = FirstName,
+    LastName = LastName,
+    teleFone = Convert.ToInt32(teleFone)
+};
+
+Person p = new(personM);
+Console.WriteLine($"du hedder {personM.FirstName}");
+
+
+Enum Eks
+
+Console.WriteLine("Indsæt Navn: ");
+string? Navn = Console.ReadLine();
+
+Arrays.ArraysEks.EnumEks.PersonE p = new(Navn);
+
+if (p.Status == Arrays.ArraysEks.EnumEks.PersonEnums.Teacher)
+{
+    Console.WriteLine("Han underviser.... ");
+}
+else
+    Console.WriteLine("How? ");
+
+
+
+
+
